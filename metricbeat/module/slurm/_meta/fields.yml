@@ -1,0 +1,22 @@
+- key: slurm
+  title: "slurm"
+  release: ga
+  description: >
+    slurm module contains metrics for memory and cpu usage of jobs
+  fields:
+    - name: slurm
+      type: group
+      description: >
+      fields:
+        - name: job_user
+          type: keyword
+          description: >
+            Username associated with job
+        - name: jobid
+          type: long
+          description: >
+            Job ID
+        - name: step
+          type: keyword
+          description: >
+            Job step

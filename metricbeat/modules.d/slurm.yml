@@ -1,0 +1,10 @@
+# Module: slurm
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-slurm.html
+
+- module: slurm
+  metricsets:
+    - job_cpu
+    - job_mem
+  period: 10s
+  hosts: ["localhost"]
+

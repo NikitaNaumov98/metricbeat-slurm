@@ -1,0 +1,14 @@
+- name: job_mem
+  type: group
+  release: beta
+  description: >
+    job_mem contains metrics associated with memory usage of jobs.
+  fields:
+    - name: memusage
+      type: long
+      description: >
+        memory usage of job
+    - name: memreq
+      type: long
+      description: >
+        maximum amount of memory for job

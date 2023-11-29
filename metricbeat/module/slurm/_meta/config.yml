@@ -1,0 +1,7 @@
+- module: slurm
+  metricsets:
+    - job_cpu
+    - job_mem
+  period: 10s
+  hosts: ["localhost"]
+

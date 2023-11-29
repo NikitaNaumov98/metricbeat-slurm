@@ -1,0 +1,1 @@
+This is the job_cpu metricset of the module slurm.

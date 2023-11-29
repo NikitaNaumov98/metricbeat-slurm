@@ -1,0 +1,49 @@
+////
+This file is generated! See scripts/mage/docs_collector.go
+////
+
+:modulename: slurm
+:edit_url: https://github.com/elastic/beats/edit/main/metricbeat/module/slurm/_meta/docs.asciidoc
+
+
+[[metricbeat-module-slurm]]
+== slurm module
+
+This is the slurm module.
+
+
+
+:edit_url:
+
+[float]
+=== Example configuration
+
+The slurm module supports the standard configuration options that are described
+in <<configuration-metricbeat>>. Here is an example configuration:
+
+[source,yaml]
+----
+metricbeat.modules:
+- module: slurm
+  metricsets:
+    - job_cpu
+    - job_mem
+  period: 10s
+  hosts: ["localhost"]
+
+----
+
+[float]
+=== Metricsets
+
+The following metricsets are available:
+
+* <<metricbeat-metricset-slurm-job_cpu,job_cpu>>
+
+* <<metricbeat-metricset-slurm-job_mem,job_mem>>
+
+include::slurm/job_cpu.asciidoc[]
+
+include::slurm/job_mem.asciidoc[]
+
+:edit_url!:
